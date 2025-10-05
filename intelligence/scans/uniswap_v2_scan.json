@@ -1,12 +1,11 @@
 {
-  "protocol": "Aave V3",
-  "scanned_files": 85,
+  "protocol": "Uniswap V2",
+  "scanned_files": 8,
   "patterns_found": {
-    "flash_loan_price_manipulation": 8,
-    "cross_chain_bridge": 2
+    "cross_chain_bridge": 1
   },
-  "risk_score": 100,
-  "risk_level": "CRITICAL",
+  "risk_score": 10,
+  "risk_level": "LOW",
   "similar_exploits": [
     {
       "name": "WORMHOLE_2022",
