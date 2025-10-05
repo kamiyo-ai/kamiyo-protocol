@@ -1,0 +1,391 @@
+{
+  "protocol": "Aave V3",
+  "scan_timestamp": "2025-10-06T00:09:46.045667",
+  "total_contracts": 129,
+  "contracts_with_patterns": 30,
+  "findings": {
+    "contracts/mocks/oracle/CLAggregators/MockAggregator.sol": [
+      {
+        "pattern_type": "oracle_manipulation",
+        "severity": "CRITICAL",
+        "description": "Potential oracle manipulation - price from manipulatable source",
+        "matched_patterns": [
+          "latestAnswer\\("
+        ],
+        "confidence": 0.7,
+        "similar_exploits": [
+          "MANGO_2022",
+          "GMX_2023"
+        ]
+      }
+    ],
+    "contracts/mocks/flashloan/MockFlashLoanReceiver.sol": [
+      {
+        "pattern_type": "flash_loan_price_manipulation",
+        "severity": "HIGH",
+        "description": "Potential flash loan manipulation - price derived from manipulatable balance",
+        "matched_patterns": [
+          "flashLoan"
+        ],
+        "confidence": 0.7,
+        "similar_exploits": []
+      }
+    ],
+    "contracts/mocks/flashloan/MockSimpleFlashLoanReceiver.sol": [
+      {
+        "pattern_type": "flash_loan_price_manipulation",
+        "severity": "HIGH",
+        "description": "Potential flash loan manipulation - price derived from manipulatable balance",
+        "matched_patterns": [
+          "flashLoan"
+        ],
+        "confidence": 0.7,
+        "similar_exploits": []
+      }
+    ],
+    "contracts/mocks/tokens/MintableERC20.sol": [
+      {
+        "pattern_type": "cross_chain_bridge",
+        "severity": "CRITICAL",
+        "description": "Potential bridge vulnerability - insufficient message validation",
+        "matched_patterns": [
+          "ecrecover"
+        ],
+        "confidence": 0.7,
+        "similar_exploits": [
+          "WORMHOLE_2022",
+          "RONIN_2022",
+          "NOMAD_2022"
+        ]
+      }
+    ],
+    "contracts/mocks/helpers/MockReserveConfiguration.sol": [
+      {
+        "pattern_type": "flash_loan_price_manipulation",
+        "severity": "HIGH",
+        "description": "Potential flash loan manipulation - price derived from manipulatable balance",
+        "matched_patterns": [
+          "flashLoan"
+        ],
+        "confidence": 0.7,
+        "similar_exploits": []
+      }
+    ],
+    "contracts/misc/AaveProtocolDataProvider.sol": [
+      {
+        "pattern_type": "flash_loan_price_manipulation",
+        "severity": "HIGH",
+        "description": "Potential flash loan manipulation - price derived from manipulatable balance",
+        "matched_patterns": [
+          "flashLoan"
+        ],
+        "confidence": 0.7,
+        "similar_exploits": []
+      }
+    ],
+    "contracts/misc/AaveOracle.sol": [
+      {
+        "pattern_type": "oracle_manipulation",
+        "severity": "CRITICAL",
+        "description": "Potential oracle manipulation - price from manipulatable source",
+        "matched_patterns": [
+          "latestAnswer\\("
+        ],
+        "confidence": 0.7,
+        "similar_exploits": [
+          "MANGO_2022",
+          "GMX_2023"
+        ]
+      }
+    ],
+    "contracts/flashloan/base/FlashLoanSimpleReceiverBase.sol": [
+      {
+        "pattern_type": "flash_loan_price_manipulation",
+        "severity": "HIGH",
+        "description": "Potential flash loan manipulation - price derived from manipulatable balance",
+        "matched_patterns": [
+          "flashLoan"
+        ],
+        "confidence": 0.7,
+        "similar_exploits": []
+      }
+    ],
+    "contracts/flashloan/base/FlashLoanReceiverBase.sol": [
+      {
+        "pattern_type": "flash_loan_price_manipulation",
+        "severity": "HIGH",
+        "description": "Potential flash loan manipulation - price derived from manipulatable balance",
+        "matched_patterns": [
+          "flashLoan"
+        ],
+        "confidence": 0.7,
+        "similar_exploits": []
+      }
+    ],
+    "contracts/flashloan/interfaces/IFlashLoanReceiver.sol": [
+      {
+        "pattern_type": "flash_loan_price_manipulation",
+        "severity": "HIGH",
+        "description": "Potential flash loan manipulation - price derived from manipulatable balance",
+        "matched_patterns": [
+          "flashLoan"
+        ],
+        "confidence": 0.7,
+        "similar_exploits": []
+      }
+    ],
+    "contracts/flashloan/interfaces/IFlashLoanSimpleReceiver.sol": [
+      {
+        "pattern_type": "flash_loan_price_manipulation",
+        "severity": "HIGH",
+        "description": "Potential flash loan manipulation - price derived from manipulatable balance",
+        "matched_patterns": [
+          "flashLoan"
+        ],
+        "confidence": 0.7,
+        "similar_exploits": []
+      }
+    ],
+    "contracts/dependencies/chainlink/AggregatorInterface.sol": [
+      {
+        "pattern_type": "oracle_manipulation",
+        "severity": "CRITICAL",
+        "description": "Potential oracle manipulation - price from manipulatable source",
+        "matched_patterns": [
+          "latestAnswer\\("
+        ],
+        "confidence": 0.7,
+        "similar_exploits": [
+          "MANGO_2022",
+          "GMX_2023"
+        ]
+      }
+    ],
+    "contracts/dependencies/weth/WETH9.sol": [
+      {
+        "pattern_type": "reentrancy",
+        "severity": "CRITICAL",
+        "description": "Potential reentrancy vulnerability - external call before state update",
+        "matched_patterns": [
+          "\\.transfer\\("
+        ],
+        "confidence": 0.7,
+        "similar_exploits": [
+          "CREAM_2021"
+        ]
+      }
+    ],
+    "contracts/protocol/libraries/configuration/ReserveConfiguration.sol": [
+      {
+        "pattern_type": "flash_loan_price_manipulation",
+        "severity": "HIGH",
+        "description": "Potential flash loan manipulation - price derived from manipulatable balance",
+        "matched_patterns": [
+          "flashLoan"
+        ],
+        "confidence": 0.7,
+        "similar_exploits": []
+      }
+    ],
+    "contracts/protocol/libraries/types/DataTypes.sol": [
+      {
+        "pattern_type": "flash_loan_price_manipulation",
+        "severity": "HIGH",
+        "description": "Potential flash loan manipulation - price derived from manipulatable balance",
+        "matched_patterns": [
+          "flashLoan"
+        ],
+        "confidence": 0.7,
+        "similar_exploits": []
+      }
+    ],
+    "contracts/protocol/libraries/logic/ReserveLogic.sol": [
+      {
+        "pattern_type": "flash_loan_price_manipulation",
+        "severity": "HIGH",
+        "description": "Potential flash loan manipulation - price derived from manipulatable balance",
+        "matched_patterns": [
+          "flashLoan"
+        ],
+        "confidence": 0.7,
+        "similar_exploits": []
+      }
+    ],
+    "contracts/protocol/libraries/logic/ValidationLogic.sol": [
+      {
+        "pattern_type": "flash_loan_price_manipulation",
+        "severity": "HIGH",
+        "description": "Potential flash loan manipulation - price derived from manipulatable balance",
+        "matched_patterns": [
+          "flashLoan"
+        ],
+        "confidence": 0.7,
+        "similar_exploits": []
+      }
+    ],
+    "contracts/protocol/libraries/logic/FlashLoanLogic.sol": [
+      {
+        "pattern_type": "flash_loan_price_manipulation",
+        "severity": "HIGH",
+        "description": "Potential flash loan manipulation - price derived from manipulatable balance",
+        "matched_patterns": [
+          "flashLoan"
+        ],
+        "confidence": 0.7,
+        "similar_exploits": []
+      }
+    ],
+    "contracts/protocol/libraries/helpers/Errors.sol": [
+      {
+        "pattern_type": "flash_loan_price_manipulation",
+        "severity": "HIGH",
+        "description": "Potential flash loan manipulation - price derived from manipulatable balance",
+        "matched_patterns": [
+          "flashLoan"
+        ],
+        "confidence": 0.7,
+        "similar_exploits": []
+      }
+    ],
+    "contracts/protocol/tokenization/AToken.sol": [
+      {
+        "pattern_type": "cross_chain_bridge",
+        "severity": "CRITICAL",
+        "description": "Potential bridge vulnerability - insufficient message validation",
+        "matched_patterns": [
+          "ecrecover"
+        ],
+        "confidence": 0.7,
+        "similar_exploits": [
+          "WORMHOLE_2022",
+          "RONIN_2022",
+          "NOMAD_2022"
+        ]
+      }
+    ],
+    "contracts/protocol/tokenization/base/DebtTokenBase.sol": [
+      {
+        "pattern_type": "cross_chain_bridge",
+        "severity": "CRITICAL",
+        "description": "Potential bridge vulnerability - insufficient message validation",
+        "matched_patterns": [
+          "ecrecover"
+        ],
+        "confidence": 0.7,
+        "similar_exploits": [
+          "WORMHOLE_2022",
+          "RONIN_2022",
+          "NOMAD_2022"
+        ]
+      }
+    ],
+    "contracts/protocol/pool/Pool.sol": [
+      {
+        "pattern_type": "flash_loan_price_manipulation",
+        "severity": "HIGH",
+        "description": "Potential flash loan manipulation - price derived from manipulatable balance",
+        "matched_patterns": [
+          "flashLoan"
+        ],
+        "confidence": 0.7,
+        "similar_exploits": []
+      }
+    ],
+    "contracts/protocol/pool/PoolStorage.sol": [
+      {
+        "pattern_type": "flash_loan_price_manipulation",
+        "severity": "HIGH",
+        "description": "Potential flash loan manipulation - price derived from manipulatable balance",
+        "matched_patterns": [
+          "flashLoan"
+        ],
+        "confidence": 0.7,
+        "similar_exploits": []
+      }
+    ],
+    "contracts/protocol/pool/PoolConfigurator.sol": [
+      {
+        "pattern_type": "flash_loan_price_manipulation",
+        "severity": "HIGH",
+        "description": "Potential flash loan manipulation - price derived from manipulatable balance",
+        "matched_patterns": [
+          "flashLoan"
+        ],
+        "confidence": 0.7,
+        "similar_exploits": []
+      }
+    ],
+    "contracts/interfaces/IPoolConfigurator.sol": [
+      {
+        "pattern_type": "flash_loan_price_manipulation",
+        "severity": "HIGH",
+        "description": "Potential flash loan manipulation - price derived from manipulatable balance",
+        "matched_patterns": [
+          "flashLoan"
+        ],
+        "confidence": 0.7,
+        "similar_exploits": []
+      }
+    ],
+    "contracts/interfaces/IPool.sol": [
+      {
+        "pattern_type": "flash_loan_price_manipulation",
+        "severity": "HIGH",
+        "description": "Potential flash loan manipulation - price derived from manipulatable balance",
+        "matched_patterns": [
+          "flashLoan"
+        ],
+        "confidence": 0.7,
+        "similar_exploits": []
+      }
+    ],
+    "contracts/interfaces/IAToken.sol": [
+      {
+        "pattern_type": "flash_loan_price_manipulation",
+        "severity": "HIGH",
+        "description": "Potential flash loan manipulation - price derived from manipulatable balance",
+        "matched_patterns": [
+          "flashLoan"
+        ],
+        "confidence": 0.7,
+        "similar_exploits": []
+      }
+    ],
+    "contracts/interfaces/IPoolDataProvider.sol": [
+      {
+        "pattern_type": "flash_loan_price_manipulation",
+        "severity": "HIGH",
+        "description": "Potential flash loan manipulation - price derived from manipulatable balance",
+        "matched_patterns": [
+          "flashLoan"
+        ],
+        "confidence": 0.7,
+        "similar_exploits": []
+      }
+    ],
+    "contracts/deployments/ReservesSetupHelper.sol": [
+      {
+        "pattern_type": "flash_loan_price_manipulation",
+        "severity": "HIGH",
+        "description": "Potential flash loan manipulation - price derived from manipulatable balance",
+        "matched_patterns": [
+          "flashLoan"
+        ],
+        "confidence": 0.7,
+        "similar_exploits": []
+      }
+    ],
+    "certora/harness/ReserveConfigurationHarness.sol": [
+      {
+        "pattern_type": "flash_loan_price_manipulation",
+        "severity": "HIGH",
+        "description": "Potential flash loan manipulation - price derived from manipulatable balance",
+        "matched_patterns": [
+          "flashLoan"
+        ],
+        "confidence": 0.7,
+        "similar_exploits": []
+      }
+    ]
+  }
+}

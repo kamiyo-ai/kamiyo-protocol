@@ -1,0 +1,288 @@
+{
+  "total_protocols_scanned": 3,
+  "reports": [
+    {
+      "protocol": "Aave V3",
+      "risk_score": 185,
+      "risk_level": "CRITICAL",
+      "pattern_summary": {
+        "oracle_manipulation": {
+          "count": 3,
+          "contracts": [
+            "contracts/mocks/oracle/CLAggregators/MockAggregator.sol",
+            "contracts/misc/AaveOracle.sol",
+            "contracts/dependencies/chainlink/AggregatorInterface.sol"
+          ],
+          "severity": "CRITICAL",
+          "similar_exploits": [
+            "MANGO_2022",
+            "GMX_2023"
+          ]
+        },
+        "flash_loan_price_manipulation": {
+          "count": 23,
+          "contracts": [
+            "contracts/mocks/flashloan/MockFlashLoanReceiver.sol",
+            "contracts/mocks/flashloan/MockSimpleFlashLoanReceiver.sol",
+            "contracts/mocks/helpers/MockReserveConfiguration.sol",
+            "contracts/misc/AaveProtocolDataProvider.sol",
+            "contracts/flashloan/base/FlashLoanSimpleReceiverBase.sol",
+            "contracts/flashloan/base/FlashLoanReceiverBase.sol",
+            "contracts/flashloan/interfaces/IFlashLoanReceiver.sol",
+            "contracts/flashloan/interfaces/IFlashLoanSimpleReceiver.sol",
+            "contracts/protocol/libraries/configuration/ReserveConfiguration.sol",
+            "contracts/protocol/libraries/types/DataTypes.sol",
+            "contracts/protocol/libraries/logic/ReserveLogic.sol",
+            "contracts/protocol/libraries/logic/ValidationLogic.sol",
+            "contracts/protocol/libraries/logic/FlashLoanLogic.sol",
+            "contracts/protocol/libraries/helpers/Errors.sol",
+            "contracts/protocol/pool/Pool.sol",
+            "contracts/protocol/pool/PoolStorage.sol",
+            "contracts/protocol/pool/PoolConfigurator.sol",
+            "contracts/interfaces/IPoolConfigurator.sol",
+            "contracts/interfaces/IPool.sol",
+            "contracts/interfaces/IAToken.sol",
+            "contracts/interfaces/IPoolDataProvider.sol",
+            "contracts/deployments/ReservesSetupHelper.sol",
+            "certora/harness/ReserveConfigurationHarness.sol"
+          ],
+          "severity": "HIGH",
+          "similar_exploits": []
+        },
+        "cross_chain_bridge": {
+          "count": 3,
+          "contracts": [
+            "contracts/mocks/tokens/MintableERC20.sol",
+            "contracts/protocol/tokenization/AToken.sol",
+            "contracts/protocol/tokenization/base/DebtTokenBase.sol"
+          ],
+          "severity": "CRITICAL",
+          "similar_exploits": [
+            "WORMHOLE_2022",
+            "RONIN_2022",
+            "NOMAD_2022"
+          ]
+        },
+        "reentrancy": {
+          "count": 1,
+          "contracts": [
+            "contracts/dependencies/weth/WETH9.sol"
+          ],
+          "severity": "CRITICAL",
+          "similar_exploits": [
+            "CREAM_2021"
+          ]
+        }
+      },
+      "recommendations": [
+        {
+          "pattern": "oracle_manipulation",
+          "action": "Implement TWAP oracle or multi-source price validation",
+          "priority": "CRITICAL",
+          "affected_contracts": [
+            "contracts/mocks/oracle/CLAggregators/MockAggregator.sol",
+            "contracts/misc/AaveOracle.sol",
+            "contracts/dependencies/chainlink/AggregatorInterface.sol"
+          ]
+        },
+        {
+          "pattern": "reentrancy",
+          "action": "Add ReentrancyGuard modifier to affected functions",
+          "priority": "CRITICAL",
+          "affected_contracts": [
+            "contracts/dependencies/weth/WETH9.sol"
+          ]
+        }
+      ],
+      "similar_historical_exploits": [
+        {
+          "exploit": "Ronin Bridge",
+          "amount_usd": 625000000,
+          "pattern": "cross_chain_bridge",
+          "date": "2022-03-23"
+        },
+        {
+          "exploit": "BNB Chain Bridge",
+          "amount_usd": 586000000,
+          "pattern": "cross_chain_bridge",
+          "date": "2022-10-06"
+        },
+        {
+          "exploit": "Wormhole Bridge",
+          "amount_usd": 326000000,
+          "pattern": "cross_chain_bridge",
+          "date": "2022-02-02"
+        },
+        {
+          "exploit": "Nomad Bridge",
+          "amount_usd": 190000000,
+          "pattern": "cross_chain_bridge",
+          "date": "2022-08-01"
+        },
+        {
+          "exploit": "Cream Finance",
+          "amount_usd": 130000000,
+          "pattern": "reentrancy",
+          "date": "2021-10-27"
+        }
+      ]
+    },
+    {
+      "protocol": "Uniswap V3",
+      "risk_score": 10,
+      "risk_level": "MEDIUM",
+      "pattern_summary": {
+        "reentrancy": {
+          "count": 1,
+          "contracts": [
+            "audits/tob/contracts/crytic/echidna/Setup.sol"
+          ],
+          "severity": "CRITICAL",
+          "similar_exploits": [
+            "CREAM_2021"
+          ]
+        }
+      },
+      "recommendations": [
+        {
+          "pattern": "reentrancy",
+          "action": "Add ReentrancyGuard modifier to affected functions",
+          "priority": "CRITICAL",
+          "affected_contracts": [
+            "audits/tob/contracts/crytic/echidna/Setup.sol"
+          ]
+        }
+      ],
+      "similar_historical_exploits": [
+        {
+          "exploit": "Cream Finance",
+          "amount_usd": 130000000,
+          "pattern": "reentrancy",
+          "date": "2021-10-27"
+        }
+      ]
+    },
+    {
+      "protocol": "Compound V3",
+      "risk_score": 165,
+      "risk_level": "CRITICAL",
+      "pattern_summary": {
+        "reentrancy": {
+          "count": 10,
+          "contracts": [
+            "contracts/ScrollComet.sol",
+            "contracts/CometRewards.sol",
+            "contracts/bulkers/MainnetBulkerWithWstETHSupport.sol",
+            "contracts/bulkers/BaseBulker.sol",
+            "contracts/bridges/SweepableBridgeReceiver.sol",
+            "contracts/bridges/BaseBridgeReceiver.sol",
+            "contracts/liquidator/vendor/@uniswap/v3-periphery/contracts/libraries/TransferHelper.sol",
+            "contracts/liquidator/vendor/@uniswap/v3-periphery/contracts/base/PeripheryPayments.sol",
+            "contracts/vendor/Timelock.sol",
+            "contracts/vendor/canonical-weth/contracts/WETH9.sol"
+          ],
+          "severity": "CRITICAL",
+          "similar_exploits": [
+            "CREAM_2021"
+          ]
+        },
+        "oracle_manipulation": {
+          "count": 5,
+          "contracts": [
+            "contracts/ScrollComet.sol",
+            "contracts/CometWithExtendedAssetList.sol",
+            "contracts/Comet.sol",
+            "contracts/CometMainInterface.sol",
+            "contracts/Configurator.sol"
+          ],
+          "severity": "CRITICAL",
+          "similar_exploits": [
+            "MANGO_2022",
+            "GMX_2023"
+          ]
+        },
+        "access_control": {
+          "count": 1,
+          "contracts": [
+            "contracts/Configurator.sol"
+          ],
+          "severity": "CRITICAL",
+          "similar_exploits": [
+            "POLY_NETWORK_2021",
+            "TRANSIT_SWAP_2022"
+          ]
+        },
+        "flash_loan_price_manipulation": {
+          "count": 1,
+          "contracts": [
+            "contracts/liquidator/OnChainLiquidator.sol"
+          ],
+          "severity": "HIGH",
+          "similar_exploits": []
+        }
+      },
+      "recommendations": [
+        {
+          "pattern": "reentrancy",
+          "action": "Add ReentrancyGuard modifier to affected functions",
+          "priority": "CRITICAL",
+          "affected_contracts": [
+            "contracts/ScrollComet.sol",
+            "contracts/CometRewards.sol",
+            "contracts/bulkers/MainnetBulkerWithWstETHSupport.sol"
+          ]
+        },
+        {
+          "pattern": "oracle_manipulation",
+          "action": "Implement TWAP oracle or multi-source price validation",
+          "priority": "CRITICAL",
+          "affected_contracts": [
+            "contracts/ScrollComet.sol",
+            "contracts/CometWithExtendedAssetList.sol",
+            "contracts/Comet.sol"
+          ]
+        },
+        {
+          "pattern": "access_control",
+          "action": "Add proper access control modifiers (onlyOwner, etc.)",
+          "priority": "CRITICAL",
+          "affected_contracts": [
+            "contracts/Configurator.sol"
+          ]
+        }
+      ],
+      "similar_historical_exploits": [
+        {
+          "exploit": "Poly Network",
+          "amount_usd": 611000000,
+          "pattern": "access_control",
+          "date": "2021-08-10"
+        },
+        {
+          "exploit": "Cream Finance",
+          "amount_usd": 130000000,
+          "pattern": "reentrancy",
+          "date": "2021-10-27"
+        },
+        {
+          "exploit": "Mango Markets",
+          "amount_usd": 110000000,
+          "pattern": "oracle_manipulation",
+          "date": "2022-10-11"
+        },
+        {
+          "exploit": "GMX V2",
+          "amount_usd": 42000000,
+          "pattern": "oracle_manipulation",
+          "date": "2023-09-01"
+        },
+        {
+          "exploit": "Transit Swap",
+          "amount_usd": 21000000,
+          "pattern": "access_control",
+          "date": "2022-10-01"
+        }
+      ]
+    }
+  ]
+}
