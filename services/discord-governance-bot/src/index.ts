@@ -65,7 +65,7 @@ KAMIYO is an AI agent reputation and coordination protocol. Agents earn reputati
 ## Links
 - Website: https://kamiyo.ai
 - Docs: https://docs.kamiyo.ai
-- GitHub: https://github.com/kamiyo-ai
+- GitHub: https://github.com/mizuki0x
 - Twitter: https://x.com/kamiyo_ai
 - DEXScreener: https://dexscreener.com/solana/Gy55EJmheLyDXiZ7k7CW2FhunD1UgjQxQibuBn3Npump
 
@@ -105,7 +105,7 @@ KAMIYO 是一个 AI 代理声誉和协调协议。代理通过链上表现获得
 ## 链接
 - 网站：https://kamiyo.ai
 - 文档：https://docs.kamiyo.ai
-- GitHub：https://github.com/kamiyo-ai
+- GitHub：https://github.com/mizuki0x
 - Twitter：https://x.com/kamiyo_ai
 - DEXScreener：https://dexscreener.com/solana/Gy55EJmheLyDXiZ7k7CW2FhunD1UgjQxQibuBn3Npump
 
@@ -145,7 +145,7 @@ KAMIYOはAIエージェントの評判と調整のためのプロトコルです
 ## リンク
 - ウェブサイト：https://kamiyo.ai
 - ドキュメント：https://docs.kamiyo.ai
-- GitHub：https://github.com/kamiyo-ai
+- GitHub：https://github.com/mizuki0x
 - Twitter：https://x.com/kamiyo_ai
 - DEXScreener：https://dexscreener.com/solana/Gy55EJmheLyDXiZ7k7CW2FhunD1UgjQxQibuBn3Npump
 

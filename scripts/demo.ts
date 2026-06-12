@@ -124,7 +124,7 @@ const client = new KamiyoClient({ connection, wallet });${colors.reset}`);
   // End
   header("Links");
   info("Protocol Dashboard", "https://protocol.kamiyo.ai");
-  info("GitHub", "https://github.com/kamiyo-ai/kamiyo-protocol");
+  info("GitHub", "https://github.com/mizuki0x/kamiyo-protocol");
   info("Solscan", `https://solscan.io/account/${PROGRAM_ID.toBase58()}`);
   console.log();
 

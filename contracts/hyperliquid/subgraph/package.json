@@ -4,7 +4,7 @@
   "description": "Subgraph for KAMIYO Hyperliquid contracts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kamiyo-ai/kamiyo-protocol"
+    "url": "https://github.com/mizuki0x/kamiyo-protocol"
   },
   "scripts": {
     "codegen": "graph codegen",

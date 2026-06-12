@@ -15,7 +15,7 @@ If you only need the production payment spine, use the root defaults. Reach for 
 ## Setup
 
 ```bash
-git clone https://github.com/kamiyo-ai/kamiyo-protocol.git
+git clone https://github.com/mizuki0x/kamiyo-protocol.git
 cd kamiyo-protocol
 pnpm install
 ```

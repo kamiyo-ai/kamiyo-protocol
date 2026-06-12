@@ -196,7 +196,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Run Surfpool Tests
-        uses: kamiyo-ai/kamiyo-protocol/.github/actions/surfpool-test@main
+        uses: mizuki0x/kamiyo-protocol/.github/actions/surfpool-test@main
         with:
           mainnet-fork: 'true'
           rpc-url: ${{ secrets.SOLANA_RPC_URL }}

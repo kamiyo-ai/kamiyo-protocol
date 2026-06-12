@@ -31,7 +31,7 @@ describe('assessAutopilotDelayedOutcome', () => {
       issueNumber: 321,
       model: 'local-model',
       prNumber: 99,
-      prUrl: 'https://github.com/kamiyoai/kamiyo-protocol/pull/99',
+      prUrl: 'https://github.com/mizuki0x/kamiyo-protocol/pull/99',
       prState: 'closed',
       prMerged: true,
       prDraft: false,
@@ -57,7 +57,7 @@ describe('assessAutopilotDelayedOutcome', () => {
       issueNumber: 322,
       model: 'local-model',
       prNumber: 100,
-      prUrl: 'https://github.com/kamiyoai/kamiyo-protocol/pull/100',
+      prUrl: 'https://github.com/mizuki0x/kamiyo-protocol/pull/100',
       prState: 'closed',
       prMerged: false,
       prDraft: true,
@@ -84,7 +84,7 @@ describe('shouldFinalizeAutopilotReceipt', () => {
     expect(
       shouldFinalizeAutopilotReceipt({
         number: 1,
-        url: 'https://github.com/kamiyoai/kamiyo-protocol/pull/1',
+        url: 'https://github.com/mizuki0x/kamiyo-protocol/pull/1',
         state: 'closed',
         headSha: 'abc123',
         merged: true,
@@ -101,7 +101,7 @@ describe('shouldFinalizeAutopilotReceipt', () => {
     expect(
       shouldFinalizeAutopilotReceipt({
         number: 2,
-        url: 'https://github.com/kamiyoai/kamiyo-protocol/pull/2',
+        url: 'https://github.com/mizuki0x/kamiyo-protocol/pull/2',
         state: 'open',
         headSha: 'def456',
         merged: false,

@@ -34,7 +34,7 @@ function freshReceipt() {
     service: 'kamiyo-marketing-agent',
     taskType: 'marketing_post_drafting',
     subjectType: 'repo',
-    subjectId: 'kamiyoai/kamiyo-protocol',
+    subjectId: 'mizuki0x/kamiyo-protocol',
     variantId: 'variant-a',
     variantStrategy: 'thompson',
     outcome: 'scheduled_posts',

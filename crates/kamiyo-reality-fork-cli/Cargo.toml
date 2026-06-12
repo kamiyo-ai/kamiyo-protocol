@@ -5,8 +5,8 @@ edition = "2021"
 license = "MIT"
 description = "Native CLI for KAMIYO Reality Fork — repo-aware launch stress tests and on-chain agent management."
 readme = "README.md"
-repository = "https://github.com/kamiyo-ai/kamiyo-protocol"
-homepage = "https://github.com/kamiyo.ai/"
+repository = "https://github.com/mizuki0x/kamiyo-protocol"
+homepage = "https://www.kamiyo.ai/"
 keywords = ["kamiyo", "cli", "reality-fork", "solana", "agents"]
 categories = ["command-line-utilities"]
 

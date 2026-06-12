@@ -1,6 +1,6 @@
 # Kamiyo ElizaOS Demo
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/kamiyo-ai/kamiyo-protocol?quickstart=1)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/mizuki0x/kamiyo-protocol?quickstart=1)
 
 ## Quick Start
 
@@ -11,7 +11,7 @@ cd examples/eliza-demo && pnpm dev
 
 **Local**:
 ```bash
-git clone https://github.com/kamiyo-ai/kamiyo-protocol
+git clone https://github.com/mizuki0x/kamiyo-protocol
 cd kamiyo-protocol
 pnpm install
 pnpm -F @kamiyo/sdk -F @kamiyo/eliza build

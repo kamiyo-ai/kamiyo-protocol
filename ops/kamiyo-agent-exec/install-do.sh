@@ -7,7 +7,7 @@ if [[ "${EUID:-$(id -u)}" -ne 0 ]]; then
 fi
 
 RUN_USER="${RUN_USER:-openclaw}"
-REPO_URL="${REPO_URL:-https://github.com/kamiyo-ai/kamiyo-protocol.git}"
+REPO_URL="${REPO_URL:-https://github.com/mizuki0x/kamiyo-protocol.git}"
 BRANCH="${BRANCH:-kamiyo/kamiyo-agent-exec-canary}"
 ENV_FILE="${ENV_FILE:-/etc/kamiyo/kamiyo-agent-exec.env}"
 UNIT_FILE="/etc/systemd/system/kamiyo-agent-exec.service"

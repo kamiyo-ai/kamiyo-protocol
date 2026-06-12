@@ -13,7 +13,7 @@ Drop-in self-improvement loop for LLM agents. Wrap your call site once; the libr
 
 Zero external ML dependencies. SQLite + TypeScript.
 
-Extracted from [kamiyo-protocol](https://github.com/kamiyoai/kamiyo-protocol), the stack powering the KAMIYO agent fleet in production since 2026-04.
+Extracted from [kamiyo-protocol](https://github.com/mizuki0x/kamiyo-protocol), the stack powering the KAMIYO agent fleet in production since 2026-04.
 
 ## Install
 

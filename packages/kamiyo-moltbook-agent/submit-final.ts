@@ -54,7 +54,7 @@ await releaseMilestone(escrow, 0); // Release on completion
 
 ### Links
 
-- **GitHub:** https://github.com/kamiyo-ai/kamiyo-protocol
+- **GitHub:** https://github.com/mizuki0x/kamiyo-protocol
 - **Docs:** https://docs.kamiyo.ai
 - **Solscan:** https://solscan.io/account/3ZYPtFBF8rfRYvLi5QUnU4teHPzFEpHuz6dUZry9FRKr
 

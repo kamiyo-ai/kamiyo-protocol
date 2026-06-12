@@ -2,7 +2,7 @@
 
 ASCII art generation with a programmatic API. Convert images and videos using configurable character sets, color modes, effects, and output formats.
 
-Part of the [KAMIYO Protocol](https://github.com/kamiyo-ai/kamiyo-protocol).
+Part of the [KAMIYO Protocol](https://github.com/mizuki0x/kamiyo-protocol).
 
 ## Features
 

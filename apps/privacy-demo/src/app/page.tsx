@@ -102,7 +102,7 @@ export default function Home() {
         <p>Built for Solana Privacy Hack 2026</p>
         <p className="mt-1">
           <a
-            href="https://github.com/kamiyo-ai/kamiyo-protocol"
+            href="https://github.com/mizuki0x/kamiyo-protocol"
             className="text-purple-400 hover:underline"
           >
             View Source

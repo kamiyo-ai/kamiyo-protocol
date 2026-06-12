@@ -58,7 +58,7 @@ All KAMIYO escrows settle in USDC on-chain. Perfect for agentic commerce where s
 
 ## Links
 
-- GitHub: https://github.com/kamiyo-ai/kamiyo-protocol
+- GitHub: https://github.com/mizuki0x/kamiyo-protocol
 - Also submitted to Colosseum Agent Hackathon (#13 on leaderboard)
 
 ---

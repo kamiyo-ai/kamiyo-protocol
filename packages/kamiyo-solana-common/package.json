@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kamiyo-ai/kamiyo-protocol.git",
+    "url": "https://github.com/mizuki0x/kamiyo-protocol.git",
     "directory": "packages/kamiyo-solana-common"
   },
   "license": "MIT"

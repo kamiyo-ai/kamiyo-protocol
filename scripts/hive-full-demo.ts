@@ -112,7 +112,7 @@ Circuits: Circom + Groth16
 On-chain: Anchor + groth16-solana
 Hash: Poseidon (BN254)
 
-Code: github.com/kamiyo-ai/kamiyo-protocol/tree/main/packages/mitama-*`,
+Code: github.com/mizuki0x/kamiyo-protocol/tree/main/packages/mitama-*`,
 ];
 
 // Twitter client (lazy loaded for live mode)

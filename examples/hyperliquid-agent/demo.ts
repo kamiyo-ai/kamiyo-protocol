@@ -299,7 +299,7 @@ async function step6_Summary(): Promise<void> {
   └─────────────────────────────────────────────────────────────────────────────┘
   `));
 
-  console.log(chalk.gray('  Docs: ') + chalk.cyan('https://github.com/kamiyo-ai/kamiyo-protocol'));
+  console.log(chalk.gray('  Docs: ') + chalk.cyan('https://github.com/mizuki0x/kamiyo-protocol'));
 }
 
 async function main(): Promise<void> {

@@ -29,7 +29,7 @@ Verify that the kamiyo-bounty-resolver program is deployed at GMbEsB7vzD7mXLHFXs
 Publish provenance for the bounty-resolver program we built:
 - Task ID: colosseum-hackathon-bounty-program
 - Description: "Autonomously built Anchor program for agent-to-agent bounty escrow with PDA accounts, automatic settlement, and event emission"
-- Deliverable URI: https://github.com/kamiyo-ai/kamiyo-protocol/tree/main/services/agent-factory/workspace/kamiyo-bounty-resolver
+- Deliverable URI: https://github.com/mizuki0x/kamiyo-protocol/tree/main/services/agent-factory/workspace/kamiyo-bounty-resolver
 - Quality Score: 95
 - Bounty PDA: GMbEsB7vzD7mXLHFXs8xe5wsP25f4jLWbCHL5Fgms8MF
 
@@ -72,7 +72,7 @@ async function main() {
     console.log('╚══════════════════════════════════════════════════════════════╝');
     console.log();
     console.log('Mainnet Program: https://solscan.io/account/GMbEsB7vzD7mXLHFXs8xe5wsP25f4jLWbCHL5Fgms8MF');
-    console.log('GitHub: https://github.com/kamiyo-ai/kamiyo-protocol');
+    console.log('GitHub: https://github.com/mizuki0x/kamiyo-protocol');
     console.log();
   } catch (error) {
     console.error('Demo failed:', error);

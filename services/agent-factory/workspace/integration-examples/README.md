@@ -142,4 +142,4 @@ try {
 
 For integration questions, open a GitHub issue:
 
-- https://github.com/kamiyo-ai/kamiyo-protocol/issues
+- https://github.com/mizuki0x/kamiyo-protocol/issues

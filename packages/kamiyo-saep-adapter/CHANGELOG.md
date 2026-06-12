@@ -78,4 +78,4 @@ and the package follows [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0
   column. Storing it explicitly is a lightweight follow-up that would let
   the route resolve `taskPda` from `reservationId` alone.
 
-[Unreleased]: https://github.com/kamiyo-ai/kamiyo-protocol/commits/main/packages/kamiyo-saep-adapter
+[Unreleased]: https://github.com/mizuki0x/kamiyo-protocol/commits/main/packages/kamiyo-saep-adapter

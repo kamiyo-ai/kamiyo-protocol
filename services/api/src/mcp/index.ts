@@ -428,7 +428,7 @@ export function createMCPRoutes(): Router {
     basePath: '',
     mcpPath: '/mcp',
     resourceName: 'KAMIYO MCP Server',
-    serviceDocumentationUrl: new URL('https://github.com/kamiyo-ai/kamiyo-protocol/tree/main/packages/kamiyo-mcp'),
+    serviceDocumentationUrl: new URL('https://github.com/mizuki0x/kamiyo-protocol/tree/main/packages/kamiyo-mcp'),
     allowDynamicRegistration: true,
     requireResourceBinding: false,
   });
@@ -437,7 +437,7 @@ export function createMCPRoutes(): Router {
     basePath: '/partners/oobe',
     mcpPath: '/mcp',
     resourceName: 'KAMIYO OOBE MCP Server',
-    serviceDocumentationUrl: new URL('https://github.com/kamiyo-ai/kamiyo-protocol/tree/main/services/api/docs/OOBE_PARTNER_INTEGRATION.md'),
+    serviceDocumentationUrl: new URL('https://github.com/mizuki0x/kamiyo-protocol/tree/main/services/api/docs/OOBE_PARTNER_INTEGRATION.md'),
     allowDynamicRegistration: false,
     allowedTools: OOBE_ALLOWED_TOOL_NAMES,
     allowedX402Hosts: getOobeAllowedTargetHosts(),

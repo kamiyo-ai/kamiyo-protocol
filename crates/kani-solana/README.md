@@ -10,7 +10,7 @@ Add as a dev dependency:
 
 ```toml
 [dev-dependencies]
-kani-solana = { git = "https://github.com/kamiyo-ai/kani-solana.git", rev = "a9fc18fe2067c83e4c409fcc50133ea0b05f74ac" }
+kani-solana = { git = "https://github.com/mizuki0x/kani-solana.git", rev = "a9fc18fe2067c83e4c409fcc50133ea0b05f74ac" }
 ```
 
 Use in your own proofs:

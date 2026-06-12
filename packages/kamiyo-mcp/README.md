@@ -592,11 +592,11 @@ const result = await generateText({ model, tools, prompt });
 
 ## Privacy
 
-See [Privacy Policy](https://github.com/kamiyo-ai/kamiyo-protocol/blob/main/docs/PRIVACY.md).
+See [Privacy Policy](https://github.com/mizuki0x/kamiyo-protocol/blob/main/docs/PRIVACY.md).
 
 ## Support
 
-- GitHub Issues: https://github.com/kamiyo-ai/kamiyo-protocol/issues
+- GitHub Issues: https://github.com/mizuki0x/kamiyo-protocol/issues
 - Email: support@kamiyo.ai
 
 ## License

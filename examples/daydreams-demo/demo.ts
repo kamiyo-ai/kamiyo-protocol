@@ -285,7 +285,7 @@ async function main() {
   console.log();
   console.log(teen('='.repeat(110)));
   console.log();
-  console.log(vice('  github.com/kamiyo-ai/kamiyo-protocol') + '  |  ' + cristal('KAMIYO x Daydreams'));
+  console.log(vice('  github.com/mizuki0x/kamiyo-protocol') + '  |  ' + cristal('KAMIYO x Daydreams'));
   console.log();
 }
 

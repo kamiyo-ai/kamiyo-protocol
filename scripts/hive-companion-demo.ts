@@ -415,7 +415,7 @@ async function main() {
   console.log(chalk.gray('  On-chain: Anchor + groth16-solana'));
   console.log(chalk.gray('  Hash: Poseidon (BN254)'));
   console.log();
-  console.log(chalk.gray('  github.com/kamiyo-ai/kamiyo-protocol'));
+  console.log(chalk.gray('  github.com/mizuki0x/kamiyo-protocol'));
   console.log();
 }
 

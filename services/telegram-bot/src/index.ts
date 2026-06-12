@@ -10,7 +10,7 @@ const KAMIYO_PAIR = 'Gy55EJmheLyDXiZ7k7CW2FhunD1UgjQxQibuBn3Npump';
 const RPC_URL = process.env.SOLANA_RPC_URL || 'https://api.mainnet-beta.solana.com';
 const DATA_FILE = './data/proposals.json';
 const ADMIN_IDS = (process.env.ADMIN_IDS || '').split(',').filter(Boolean);
-const GITHUB_REPO = 'kamiyo-ai/kamiyo-protocol';
+const GITHUB_REPO = 'mizuki0x/kamiyo-protocol';
 const DOC_REFRESH_INTERVAL = 60 * 60 * 1000;
 
 const DOCS_TO_FETCH = [
@@ -296,7 +296,7 @@ KAMIYO is an AI agent reputation and coordination protocol on Solana. Agents ear
 
 ## Links
 - Website: https://kamiyo.ai
-- GitHub: https://github.com/kamiyo-ai
+- GitHub: https://github.com/mizuki0x
 - Twitter: https://x.com/kamiyo_ai
 - DEXScreener: https://dexscreener.com/solana/${KAMIYO_PAIR}
 

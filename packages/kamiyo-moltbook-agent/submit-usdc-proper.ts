@@ -77,7 +77,7 @@ All KAMIYO escrows settle in USDC on-chain. Stable value for agent commerce wher
 
 ### Links
 
-- **GitHub:** https://github.com/kamiyo-ai/kamiyo-protocol
+- **GitHub:** https://github.com/mizuki0x/kamiyo-protocol
 - **Docs:** https://docs.kamiyo.ai
 - **Colosseum Hackathon:** #13 on leaderboard (colosseum.com/agent-hackathon/projects/kamiyo-protocol)
 

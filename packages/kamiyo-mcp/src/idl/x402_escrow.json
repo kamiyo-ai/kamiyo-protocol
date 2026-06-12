@@ -5,7 +5,7 @@
     "version": "0.1.0",
     "spec": "0.1.0",
     "description": "Kamiyo - Agent Identity and Conflict Resolution Protocol for Solana",
-    "repository": "https://github.com/kamiyo-ai/kamiyo-protocol"
+    "repository": "https://github.com/mizuki0x/kamiyo-protocol"
   },
   "instructions": [
     {

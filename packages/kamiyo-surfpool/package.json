@@ -8,12 +8,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kamiyo-ai/kamiyo-protocol.git",
+    "url": "https://github.com/mizuki0x/kamiyo-protocol.git",
     "directory": "packages/kamiyo-surfpool"
   },
-  "homepage": "https://github.com/kamiyo-ai/kamiyo-protocol/tree/main/packages/kamiyo-surfpool",
+  "homepage": "https://github.com/mizuki0x/kamiyo-protocol/tree/main/packages/kamiyo-surfpool",
   "bugs": {
-    "url": "https://github.com/kamiyo-ai/kamiyo-protocol/issues"
+    "url": "https://github.com/mizuki0x/kamiyo-protocol/issues"
   },
   "scripts": {
     "build": "rm -rf dist && tsc && npm run build:esm",

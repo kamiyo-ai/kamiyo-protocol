@@ -11,11 +11,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kamiyo-ai/kamiyo-protocol"
+    "url": "https://github.com/mizuki0x/kamiyo-protocol"
   },
   "homepage": "https://kamiyo.ai",
-  "documentation": "https://github.com/kamiyo-ai/kamiyo-protocol/tree/main/packages/kamiyo-mcp",
-  "support": "https://github.com/kamiyo-ai/kamiyo-protocol/issues",
+  "documentation": "https://github.com/mizuki0x/kamiyo-protocol/tree/main/packages/kamiyo-mcp",
+  "support": "https://github.com/mizuki0x/kamiyo-protocol/issues",
   "keywords": [
     "solana",
     "escrow",

@@ -268,7 +268,7 @@ async function main() {
   console.log();
   console.log(teen('═'.repeat(90)));
   console.log();
-  console.log(vice('  github.com/kamiyo-ai/kamiyo-protocol') + '  •  ' + cristal('On-chain ZK verification'));
+  console.log(vice('  github.com/mizuki0x/kamiyo-protocol') + '  •  ' + cristal('On-chain ZK verification'));
   console.log();
 }
 

@@ -247,7 +247,7 @@ async function main() {
   console.log();
   console.log(teen('═'.repeat(90)));
   console.log();
-  console.log(vice('  github.com/kamiyo-ai/kamiyo-protocol') + '  •  ' + cristal('Built for AgenC'));
+  console.log(vice('  github.com/mizuki0x/kamiyo-protocol') + '  •  ' + cristal('Built for AgenC'));
   console.log();
 }
 

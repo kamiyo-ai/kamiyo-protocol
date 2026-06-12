@@ -1,6 +1,6 @@
 # KAMIYO x DARK_FOREST Demo
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/kamiyo-ai/kamiyo-protocol?quickstart=1)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/mizuki0x/kamiyo-protocol?quickstart=1)
 
 Quality-escrowed inference payments with ZK privacy proofs.
 

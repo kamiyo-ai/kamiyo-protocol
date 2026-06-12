@@ -78,7 +78,7 @@ Sub-cent USDC micropayments across Solana, Base, and EVM chains via PayAI Networ
 
 ## Links
 
-- GitHub: https://github.com/kamiyo-ai/kamiyo-protocol
+- GitHub: https://github.com/mizuki0x/kamiyo-protocol
 - Docs: https://docs.kamiyo.ai
 - Colosseum Project: https://colosseum.com/agent-hackathon/projects/kamiyo-protocol
 

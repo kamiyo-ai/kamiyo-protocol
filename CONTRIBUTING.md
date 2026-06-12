@@ -15,7 +15,7 @@ This guide defines contribution standards for code quality and release safety.
 ### Initial Setup
 
 ```bash
-git clone https://github.com/kamiyo-ai/kamiyo-protocol.git
+git clone https://github.com/mizuki0x/kamiyo-protocol.git
 cd kamiyo-protocol
 pnpm install
 ```

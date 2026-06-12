@@ -32,7 +32,7 @@ test('assessDocsDelayedOutcome scores merged docs PRs as success', () => {
     mergeChangedPaths: ['packages/kamiyo-agent/src/run-ledger.ts'],
     mergedFiles: ['README.md', 'CHANGELOG.md'],
     prNumber: 42,
-    prUrl: 'https://github.com/kamiyoai/kamiyo-protocol/pull/42',
+    prUrl: 'https://github.com/mizuki0x/kamiyo-protocol/pull/42',
     prState: 'closed',
     prMerged: true,
     followUpBranch: 'docs-agent/regen-abc1234',
@@ -53,7 +53,7 @@ test('assessDocsDelayedOutcome scores closed-unmerged docs PRs as failure', () =
     mergeChangedPaths: ['services/kamiyo-autopilot/src/reconcile.ts'],
     mergedFiles: ['services/kamiyo-autopilot/CHANGELOG.md'],
     prNumber: 77,
-    prUrl: 'https://github.com/kamiyoai/kamiyo-protocol/pull/77',
+    prUrl: 'https://github.com/mizuki0x/kamiyo-protocol/pull/77',
     prState: 'closed',
     prMerged: false,
     followUpBranch: 'docs-agent/regen-def5678',
@@ -86,7 +86,7 @@ test('shouldFinalizeDocsReceipt returns true only for closed docs PRs', () => {
   assert.equal(
     shouldFinalizeDocsReceipt({
       number: 1,
-      url: 'https://github.com/kamiyoai/kamiyo-protocol/pull/1',
+      url: 'https://github.com/mizuki0x/kamiyo-protocol/pull/1',
       state: 'closed',
       headRef: 'docs-agent/regen-1',
       headSha: 'sha-1',
@@ -101,7 +101,7 @@ test('shouldFinalizeDocsReceipt returns true only for closed docs PRs', () => {
   assert.equal(
     shouldFinalizeDocsReceipt({
       number: 2,
-      url: 'https://github.com/kamiyoai/kamiyo-protocol/pull/2',
+      url: 'https://github.com/mizuki0x/kamiyo-protocol/pull/2',
       state: 'open',
       headRef: 'docs-agent/regen-2',
       headSha: 'sha-2',

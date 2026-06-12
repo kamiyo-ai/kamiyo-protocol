@@ -82,5 +82,5 @@ echo -e "${CYAN}═════════════════════�
 echo ""
 echo -e "  ${BOLD}Demo complete.${RESET}"
 echo ""
-echo -e "  ${MAGENTA}github.com/kamiyo-ai/kamiyo-protocol${RESET}  ${PURPLE}•${RESET}  ${CYAN}github.com/dark-forest-ai/AgenC${RESET}"
+echo -e "  ${MAGENTA}github.com/mizuki0x/kamiyo-protocol${RESET}  ${PURPLE}•${RESET}  ${CYAN}github.com/dark-forest-ai/AgenC${RESET}"
 echo ""

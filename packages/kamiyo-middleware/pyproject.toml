@@ -43,10 +43,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/kamiyo-ai/kamiyo-protocol"
-Documentation = "https://github.com/kamiyo-ai/kamiyo-protocol#readme"
-Repository = "https://github.com/kamiyo-ai/kamiyo-protocol"
-Issues = "https://github.com/kamiyo-ai/kamiyo-protocol/issues"
+Homepage = "https://github.com/mizuki0x/kamiyo-protocol"
+Documentation = "https://github.com/mizuki0x/kamiyo-protocol#readme"
+Repository = "https://github.com/mizuki0x/kamiyo-protocol"
+Issues = "https://github.com/mizuki0x/kamiyo-protocol/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]

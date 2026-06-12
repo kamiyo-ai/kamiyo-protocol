@@ -53,7 +53,7 @@ jobs:
         if: steps.sarif_support.outputs.needs_patch == '1'
         uses: actions/checkout@v6
         with:
-          repository: kamiyo-ai/kani
+          repository: mizuki0x/kani
           ref: kamiyo/sarif-output
           path: kani-src
           submodules: recursive
