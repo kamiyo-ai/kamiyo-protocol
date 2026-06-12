@@ -1,7 +1,7 @@
 # KAMIYO Protocol
 
-[![CI](https://github.com/kamiyo-ai/kamiyo-protocol/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/kamiyo-ai/kamiyo-protocol/actions/workflows/ci.yml)
-[![Kani](https://github.com/kamiyo-ai/kamiyo-protocol/actions/workflows/kani.yml/badge.svg?branch=main)](https://github.com/kamiyo-ai/kamiyo-protocol/actions/workflows/kani.yml)
+[![CI](https://github.com/mizuki0x/kamiyo-protocol/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/mizuki0x/kamiyo-protocol/actions/workflows/ci.yml)
+[![Kani](https://github.com/mizuki0x/kamiyo-protocol/actions/workflows/kani.yml/badge.svg?branch=main)](https://github.com/mizuki0x/kamiyo-protocol/actions/workflows/kani.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 KAMIYO Protocol is the core open-source repository for KAMIYO.
@@ -32,7 +32,7 @@ Kizuna is the protocol's agentic trust and settlement layer. It provides trust s
 ### Install
 
 ```bash
-git clone https://github.com/kamiyo-ai/kamiyo-protocol.git
+git clone https://github.com/mizuki0x/kamiyo-protocol.git
 cd kamiyo-protocol
 pnpm install
 ```
@@ -57,6 +57,12 @@ The root defaults target the Kizuna core workspace. For module, legacy, and on-c
 - [Meishi Compliance](services/meishi-compliance/README.md): identity and compliance services around Meishi passports
 - [Marketing Agent](services/kamiyo-marketing-agent/README.md): daily cron that drafts posts from GitHub commits and schedules them via Postiz
 - [CDP Onboarding](apps/cdp-onboarding/README.md): reference operator app for Kizuna account setup and control-plane actions
+
+## Architecture
+
+The monorepo is organized around Kizuna, the protocol's trust and settlement layer. Off-chain services in `services/` expose verification, settlement, funding, and trust APIs. Client SDKs and integration packages live in `packages/`. On-chain components are split across Solana programs in `programs/`, Rust crates with the ZK and trust-layer cores in `crates/`, zero-knowledge circuits in `circuits/` and `noir/`, and EVM contracts in `contracts/`. Reference apps and demos live in `apps/` and `examples/`.
+
+See [ARCHITECTURE.md](ARCHITECTURE.md) for the full system view.
 
 ## Documentation
 
