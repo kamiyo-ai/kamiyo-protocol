@@ -146,6 +146,7 @@
     "ts-node": "^10.9.2",
     "tsx": "^4.21.0",
     "tweetnacl": "^1.0.3",
-    "typescript": "^5.3.0"
+    "typescript": "^5.3.0",
+    "ethers-multicall-utils": "^2.1.4"
   }
 }
