@@ -60,7 +60,7 @@ jobs:
       AGENT_LEARNING_CONTROL_LOOP_TRIGGER: ${{ github.event_name }}
       MERGE_SHA: ${{ github.event.inputs.sha || github.sha }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
           token: ${{ secrets.AUTOPILOT_PAT || github.token }}
