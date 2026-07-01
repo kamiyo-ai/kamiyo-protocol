@@ -59,7 +59,7 @@ jobs:
       AGENT_LEARNING_API_TOKEN: ${{ secrets.AGENT_LEARNING_API_TOKEN }}
       AGENT_LEARNING_CONTROL_LOOP_TRIGGER: ${{ github.event_name }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
           token: ${{ secrets.AUTOPILOT_PAT || github.token }}
